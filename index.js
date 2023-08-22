@@ -13,12 +13,13 @@
 
 const jsonServer = require('json-server');
 const jwt = require('jsonwebtoken');
+const crypto = require('crypto');
 
 const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 4000;
-const secretKey = 'your_secret_key'; // Секретний ключ для підпису токенів
+const secretKey = crypto.randomBytes(32).toString('hex'); // Секретний ключ для підпису токенів
 
 server.use(middlewares);
 server.use(jsonServer.bodyParser);
