@@ -62,30 +62,14 @@ function isValidLogin(email, password) {
 	return user !== undefined;
 }
 
+// Маршрут для отримання інформації про користувача
+server.get('/users', getUser, (req, res) => {
+	const user = req.user;
+	res.json({ user });
+});
+
 server.use(router);
 
 server.listen(port, () => {
 	console.log('JSON Server is running on port ' + port);
-});
-
-// Нова функція для отримання інформації про користувача
-function getUser(req, res, next) {
-	if (req.headers.authorization && req.headers.authorization.split(' ')[1]) {
-		jwt.verify(req.headers.authorization.split(' ')[1], secretKey, (err, decoded) => {
-			if (err) {
-				return res.status(401).json({ message: 'Invalid token' });
-			} else {
-				req.user = decoded;
-				next();
-			}
-		});
-	} else {
-		return res.status(401).json({ message: 'No token provided' });
-	}
-}
-
-// Додаємо маршрут для отримання інформації про користувача
-server.use('/users', getUser, (req, res) => {
-	const user = req.user;
-	res.json({ user });
 });
