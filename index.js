@@ -55,14 +55,27 @@ server.use((req, res, next) => {
 
 // Приклад функції для перевірки логіна та пароля
 function isValidLogin(email, password) {
-	// Тут ви повинні реалізувати логіку перевірки логіна та пароля
-	// Це може бути зв'язано з базою даних або іншим механізмом аутентифікації
 	const users = require('./db.json').users;
 	const user = users.find(u => u.email === email && u.password === password);
 	return user !== undefined;
 }
 
 // Маршрут для отримання інформації про користувача
+function getUser(req, res, next) {
+	if (req.headers.authorization && req.headers.authorization.split(' ')[1]) {
+		jwt.verify(req.headers.authorization.split(' ')[1], secretKey, (err, decoded) => {
+			if (err) {
+				return res.status(401).json({ message: 'Invalid token' });
+			} else {
+				req.user = decoded;
+				next();
+			}
+		});
+	} else {
+		return res.status(401).json({ message: 'No token provided' });
+	}
+}
+
 server.get('/users', getUser, (req, res) => {
 	const user = req.user;
 	res.json({ user });
