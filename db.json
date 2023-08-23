@@ -34,8 +34,8 @@
 		{
 			"id": 3,
 			"category": "Watches",
-			"images": "image_url",
-			"title": "https://cdn2.chrono24.com/images/uhren/27515347-iexgctg53fchat59vcrchzy4-Square360.jpg",
+			"images": "https://millenarywatches.com/wp-content/uploads/2023/08/IMG_1934-416x416.jpgl",
+			"title": "Rolex Lady Datejust 28 279174 Mother of Pearl Diamond Dial Jubilee",
 			"price": "$122,500 USD"
 		},
 		{
@@ -48,7 +48,7 @@
 		{
 			"id": 5,
 			"category": "Watches",
-			"images": "https://cdn2.chrono24.com/images/uhren/29372528-t13uueegiptfwgx19bbw2ylz-Square360.jpgl",
+			"images": "https://millenarywatches.com/wp-content/uploads/2023/04/IMG_8956-416x416.jpg",
 			"title": "Rolex Yacht-Master 42",
 			"price": "5,500 USD"
 		},
@@ -190,6 +190,20 @@
 			"category": "Cufflinks",
 			"images": "https://cufflinks.com/cdn/shop/products/DN-MSILH-IR-NV-TR-1.jpg?v=1692376659&width=400",
 			"title": "Mickey Silhouette Iridescent Navy Tie",
+			"price": "250 USD"
+		},
+		{
+			"id": 26,
+			"category": "Watches",
+			"images": "https://millenarywatches.com/wp-content/uploads/2023/08/IMG_1926-416x416.jpg",
+			"title": "Rolex Explorer 40 224270 Unworn 2023",
+			"price": "250 USD"
+		},
+		{
+			"id": 27,
+			"category": "Watches",
+			"images": "https://millenarywatches.com/wp-content/uploads/2022/12/IMG_8382-416x416.jpg",
+			"title": "Rolex Day-Date 40 Sundust Dial 228235 2016",
 			"price": "250 USD"
 		}
 	]
