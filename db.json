@@ -34,7 +34,7 @@
 		{
 			"id": 3,
 			"category": "Watches",
-			"images": "https://millenarywatches.com/wp-content/uploads/2023/08/IMG_1934-416x416.jpgl",
+			"images": "https://millenarywatches.com/wp-content/uploads/2021/01/IMG_2084-2-416x416.jpg",
 			"title": "Rolex Lady Datejust 28 279174 Mother of Pearl Diamond Dial Jubilee",
 			"price": "$122,500 USD"
 		},
@@ -212,6 +212,21 @@
 			"images": "https://millenarywatches.com/wp-content/uploads/2022/10/IMG_7393-416x416.jpg",
 			"title": "Rolex Submariner Date Black Dial Green Ceramic 126610LV Fullset 2020",
 			"price": "250 USD"
+		},
+		{
+			"id": 29,
+			"category": "Watches",
+			"images": "https://millenarywatches.com/wp-content/uploads/2022/09/IMG_7060-416x416.jpg",
+			"title": "Rolex Submariner Black Dial 124060 Fullset 2021",
+			"price": "250 USD"
+		},
+		{
+			"id": 29,
+			"category": "Watches",
+			"images": "https://millenarywatches.com/wp-content/uploads/2022/10/IMG_7402-416x416.jpg",
+			"title": "Rolex GMT-Master II 126710BLNR Jubilee Box & Paper 2020",
+			"price": "250 USD"
 		}
+		
 	]
 }
